@@ -10,7 +10,7 @@
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #eeeeee;
-    --primary-color: #4756df;
+    --primary-color: #317f43;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -59,14 +59,16 @@ section {
 
 /* Barra de Navegación */
 
-.flex-conteiner-nav .logo {
+.flex-conteiner-nav .logo,
+.flex-conteiner-nav .logo img {
     display: flex;
     align-items: center;
 }
 
 .flex-conteiner-nav img {
+    margin-left: -35px;
     width: 100%; /* Ajusta el tamaño de la imagen para que ocupe el 100% del contenedor */
-    max-width: 320px; /* Ajusta el tamaño máximo del logo según tus necesidades */
+    max-width: 320px; /* Ajusta el tamaño máximo del logo según la necesidad*/
 }
 
 .flex-conteiner-nav h1 {
@@ -104,9 +106,9 @@ nav a {
     transition: var(--transition);
 }
 
-nav a:hover {
-    color: #fff; /* Texto blanco */
-    border-bottom: 2px solid #fff; /* Borde blanco en el hover */
+nav a:not(.logo):hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 nav ul {
