@@ -63,12 +63,18 @@ section {
 .flex-conteiner-nav .logo img {
     display: flex;
     align-items: center;
+    margin-left: -25px;
+    transition: transform 1.5s ease-in-out;
 }
 
 .flex-conteiner-nav img {
-    margin-left: -35px;
+    margin-left: 0px;
     width: 100%; /* Ajusta el tamaño de la imagen para que ocupe el 100% del contenedor */
-    max-width: 320px; /* Ajusta el tamaño máximo del logo según la necesidad*/
+    max-width: 400px; /* Ajusta el tamaño máximo del logo según la necesidad*/
+}
+
+.flex-conteiner-nav img:hover{
+    transform: rotateX(360deg);
 }
 
 .flex-conteiner-nav h1 {
@@ -143,20 +149,20 @@ nav::after {
 }
 /* FIN Barra de Navegación */
 
-/* Sección Hero */
+/* Sección NOSOTROS */
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
     max-width: 68.75rem;
-    margin: 7rem auto; /* Aumentado el margen superior */
+    margin: 1rem auto; /* Aumentado el margen superior */
 }
 
-.hero img {
-    height: 20rem;
-    width: 35rem;
+.hero video {
+    height: 30rem;
+    width: 45rem;
 }
 
 .bio {
@@ -166,6 +172,10 @@ nav::after {
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
+.bio h2{
+    text-align: center;
+}
+
 .bio h1 {
     margin-bottom: var(--bottom-margin);
 }
@@ -173,11 +183,13 @@ nav::after {
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+    text-align: center;
 }
 
-/* FIN Sección Hero */
+/* FIN Sección NOSOTROS */
 
-/* Sobre Mí */
+
+/* MAS SOBRE NOSOTROS */
 
 .mas-sobre {
     background-color: var(--bg-color);
@@ -194,9 +206,9 @@ nav::after {
     padding: 0.4rem;
 }
 
-/* FIN Sobre Mí */
+/* FIN MAS SOBRE NOSOTROS */
 
-/* Sección Habilidades */
+/* Sección DESTINOS */
 
 .habilidades {
     max-width: auto;
@@ -214,9 +226,14 @@ nav::after {
 }
 
 .icono {
-    width: 11.875rem;
-    height: 11.25rem;
+    width: 20rem;
+    height: 13rem;
 }
+
+.icono:hover {
+    transform: scale(1.2);
+}
+
 
 .tarjeta-icono {
     background-color: #fff;
@@ -226,10 +243,10 @@ nav::after {
     margin: 10px;
 }
 
-/* FIN Sección Habilidades */
+/* FIN Sección DESTINOS */
 
 
-/* Sección Proyectos */
+/* Sección EXCURSIONES */
 
 .proyectos {
     background-color: var(--bg-color);
@@ -238,14 +255,20 @@ nav::after {
 }
 
 .foto-de-proyecto {
-    width: 65%;
-    height: 60%;
+    width: auto;
+    height: 17rem;
 }
 
 .contenedor-de-proyectos {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.contenedor-de-proyecto:hover {
+    transform: scale(1.1);
 }
 
 .titulo-de-proyectos {
@@ -255,12 +278,16 @@ nav::after {
 
 .contenedor-de-proyecto {
     text-align: center;
-    width: 21.875rem;
+    width: 18rem;
     padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor-de-proyecto p {
     padding: 0.4rem;
+    flex-grow: 1;
 }
 
 .titulo-de-proyecto {
@@ -277,11 +304,13 @@ nav::after {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* FIN Sección Proyectos */
+/* FIN Sección EXCURSIONES */
 
-/* Sección Contacto */
+/* Sección CONTACTO */
 
 .contacto {
     margin-top: 2rem;
@@ -345,7 +374,7 @@ nav::after {
     cursor: pointer;
 }
 
-/* FIN Sección Contacto */
+/* FIN Sección CONTACTO */
 
 /* Sección de redes sociales */
 
@@ -468,8 +497,8 @@ footer {
     /* Sección Habilidades */
 
     .icono {
-        width: 5.875rem;
-        height: 5.25rem;
+        width: 15rem;
+        height: 8rem;
     }
 
     /* FIN Sección Habilidades */
