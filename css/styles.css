@@ -64,7 +64,7 @@ section {
     display: flex;
     align-items: center;
     margin-left: -25px;
-    transition: transform 1.5s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 
 .flex-conteiner-nav img {
@@ -408,7 +408,7 @@ footer {
 
 .desplazarse-hacia-arriba {
     position: fixed;
-    right: 0.5%;
+    right: 10px;
     bottom: 3%;
     cursor: pointer;
 }
