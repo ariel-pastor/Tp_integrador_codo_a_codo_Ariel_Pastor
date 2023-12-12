@@ -11,6 +11,7 @@
     --bolder-font: 900;
     --bg-color: #eeeeee;
     --primary-color: #317f43;
+    --color-cartel:#317f43;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -196,6 +197,8 @@ nav::after {
 
 .bio h2 {
     text-align: center;
+    background-color: var(--color-cartel);
+    color: #fff;
 }
 
 .bio h1 {
@@ -457,7 +460,7 @@ footer {
 }
 
 .footer-info {
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     margin-top: 0;
     color: #fff;
 }
