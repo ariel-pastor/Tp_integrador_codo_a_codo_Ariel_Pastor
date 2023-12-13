@@ -49,6 +49,10 @@ a:hover {
 
 body {
     font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
 }
 
 section {
@@ -171,244 +175,7 @@ nav::after {
 
 /* FIN Barra de Navegación */
 
-/* Sección NOSOTROS */
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 68.75rem;
-    margin: 1rem auto;
-    /* Aumentado el margen superior */
-}
-
-.hero video {
-    height: 30rem;
-    width: 45rem;
-}
-
-.bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-
-.bio h2 {
-    text-align: center;
-    background-color: var(--color-cartel);
-    color: #fff;
-}
-
-.bio h1 {
-    margin-bottom: var(--bottom-margin);
-}
-
-.bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-    text-align: center;
-}
-
-/* FIN Sección NOSOTROS */
-
-
-/* MAS SOBRE NOSOTROS */
-
-.mas-sobre {
-    background-color: var(--bg-color);
-    padding: 1rem 6rem;
-}
-
-.mas-sobre h2 {
-    margin-bottom: var(--bottom-margin);
-    text-align: center;
-}
-
-.mas-sobre p {
-    line-height: var(--line-height);
-    padding: 0.4rem;
-}
-
-/* FIN MAS SOBRE NOSOTROS */
-
-/* Sección DESTINOS */
-
-.habilidades {
-    max-width: auto;
-    margin: auto;
-    text-align: center;
-    margin-top: 2.5rem;
-}
-
-.encabezado-habilidad {
-    margin-bottom: 1rem;
-}
-
-.contenedor-habilidad img {
-    padding: 1.25rem;
-}
-
-.icono {
-    width: 20rem;
-    height: 13rem;
-}
-
-.icono:hover {
-    transform: scale(1.2);
-}
-
-
-.tarjeta-icono {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-    padding: 20px;
-    margin: 10px;
-}
-
-/* FIN Sección DESTINOS */
-
-
-/* Sección EXCURSIONES */
-
-.proyectos {
-    background-color: var(--bg-color);
-    padding: 32px 0;
-    margin-top: 2rem;
-}
-
-.foto-de-proyecto {
-    width: auto;
-    height: 17rem;
-}
-
-.contenedor-de-proyectos {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2rem;
-}
-
-.contenedor-de-proyecto:hover {
-    transform: scale(1.1);
-}
-
-.titulo-de-proyectos {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.contenedor-de-proyecto {
-    text-align: center;
-    width: 18rem;
-    padding: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedor-de-proyecto p {
-    padding: 0.4rem;
-    flex-grow: 1;
-}
-
-.titulo-de-proyecto {
-    margin-bottom: var(--bottom-margin);
-    margin-top: 1rem;
-}
-
-.detalle-de-proyecto {
-    margin-bottom: var(--bottom-margin);
-}
-
-.tarjeta-de-proyecto {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* FIN Sección EXCURSIONES */
-
-/* Sección CONTACTO */
-
-.contacto {
-    margin-top: 2rem;
-}
-
-.contacto h2 {
-    text-align: center;
-    margin-bottom: var(--bottom-margin-2);
-}
-
-.contenedor-formulario-contacto {
-    max-width: 40.75rem;
-    margin: 0 auto;
-    padding: 0.938rem;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-}
-
-.contenedor-formulario-contacto label {
-    line-height: 2.7em;
-    font-weight: var(--bold-font);
-    color: var(--primary-color);
-}
-
-.contenedor-formulario-contacto textarea {
-    min-height: 6.25rem;
-    font-size: 14px;
-}
-
-.contenedor-formulario-contacto .input-field {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    border: 2px outset var(--primary-color);
-    font-size: 0.875rem;
-    outline: none;
-}
-
-.input-field::placeholder {
-    padding: 0.5rem;
-    color: var(--primary-color);
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #fff;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: var(--bold-font);
-    transition: var(--transition);
-}
-
-.submit-btn:hover {
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    cursor: pointer;
-}
-
-.input-field option {
-    color: var(--color-cartel);
-}
-
-select.input-field::-ms-expand {
-    color: var(--color-cartel);
-}
-
-/* FIN Sección CONTACTO */
 
 /* Sección de redes sociales */
 
@@ -434,6 +201,7 @@ footer {
     padding: 1.25rem;
     text-align: center;
     margin: 2rem 0 0;
+    margin-top: auto;
   
 }
 
@@ -447,8 +215,8 @@ footer {
 
 .footer-nav img {
     width: 100%;
-    max-width: 400px;
-    margin-left: -5rem;
+    max-width: 280px;
+    margin-left: -3rem;
 }
 
 .footer-nav ul {
