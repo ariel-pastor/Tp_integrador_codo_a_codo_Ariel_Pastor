@@ -1,7 +1,7 @@
 let clickCount = 0;
 
 function redirectToAdmin() {
-  window.location.href = "destinologin.html";
+  window.location.href = "login.html";
 }
 
 document.getElementById('logo').addEventListener('click', function () {
