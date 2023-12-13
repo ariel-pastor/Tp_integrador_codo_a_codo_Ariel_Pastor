@@ -595,15 +595,19 @@ footer {
     /* Sección DESTINOS */
 
     .item {
-        flex: 0 0 50%;
-        /* En pantallas más pequeñas, cambiamos a 2 elementos por fila */
+        flex: 0 0 100%;
     }
 
     .icono {
         width: 100%;
-        /* Hacemos que las imágenes ocupen el 100% del ancho del contenedor */
-        height: auto;
-        /* Mantenemos la proporción original de las imágenes */
+        height: 20rem;
+        object-fit: cover; /* Ajusta la imagen manteniendo su proporción */
+    }
+
+    .contenedor-habilidad img {
+        padding: 1.25rem;
+        width: 100%; /* Establecer un ancho del 100% para que se adapten al contenedor */
+        max-height: 25rem; /* Establecer una altura máxima para evitar que las imágenes se vuelvan excesivamente altas */
     }
 
     /* FIN Sección DESTINOS */
