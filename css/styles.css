@@ -246,13 +246,31 @@ nav::after {
     margin-bottom: 1rem;
 }
 
+.contenedor-habilidad {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Agregamos esto para que las imágenes se envuelvan en líneas si no caben en una sola fila */
+}
+
+.set-container {
+    display: flex;
+    flex-wrap: wrap; /* Agregamos esto para que los elementos dentro del set-container se envuelvan en líneas si no caben en una sola fila */
+}
+
+.item {
+    text-align: center;
+    margin: 0px;
+
+}
+
+
 .contenedor-habilidad img {
     padding: 1.25rem;
 }
 
 .icono {
-    width: 20rem;
-    height: 13rem;
+    width: 25rem;
+    height: 15rem;
 }
 
 .icono:hover {
@@ -317,7 +335,7 @@ nav::after {
 
 .titulo-de-proyecto {
     margin-bottom: var(--bottom-margin);
-    margin-top: 1rem;
+    margin-top: 0.6rem;
 }
 
 .detalle-de-proyecto {
@@ -565,16 +583,20 @@ footer {
 
     /* FIN Sobre Mí */
 
-    /* Sección Habilidades */
-
-    .icono {
-        width: 15rem;
-        height: 8rem;
+    /* Sección DESTINOS */
+    
+    .item {
+        flex: 0 0 50%; /* En pantallas más pequeñas, cambiamos a 2 elementos por fila */
     }
 
-    /* FIN Sección Habilidades */
+    .icono {
+        width: 100%; /* Hacemos que las imágenes ocupen el 100% del ancho del contenedor */
+        height: auto; /* Mantenemos la proporción original de las imágenes */
+    }
 
-    /* Sección Proyectos */
+    /* FIN Sección DESTINOS */
+
+    /* Sección EXCURSIONES */
 
     .contenedor-proyectos {
         flex-direction: column;
@@ -584,7 +606,7 @@ footer {
         width: 20.875rem;
     }
 
-    /* FIN Sección Proyectos */
+    /* FIN Sección EXCURSIONES */
 
     /* Sección Contacto */
 
@@ -612,5 +634,8 @@ footer {
 
     .contenedor-formulario-contacto {
         max-width: 17.75rem;
+    }
+    .item {
+        flex: 0 0 100%; /* En pantallas aún más pequeñas, cambiamos a 1 elemento por fila */
     }
 }
